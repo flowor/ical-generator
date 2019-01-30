@@ -1,6 +1,6 @@
 # iCal Generator
 
-Converts a csv file into an iCal .ics file ready to be imported into Outlook Calendar
+Converts a csv file into an iCal .ics file ready to be imported into an Outlook Calendar for example
 
 ## Getting Started
 
