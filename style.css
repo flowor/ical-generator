@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background: #fff;
+
+}
+
+.content {
+    padding: 60px;
+    background: #fff;
+}
+
+#heading {
+    text-align: center;
+    padding:20px;
+    background: #eee;
+}
+
+#heading h1 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.btn {
+    display:inline-block;
+    padding: 10px 25px;
+    border:0.14em solid #666;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:400;
+    text-align:center;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    border:0.14em solid #999;
+    color: #999;    
+}
+
+.help {
+    border-top: 1px solid #576682;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.help a {
+    color: #576682;
+}
+
+.help a:hover {
+    color: #8091AF;
+}
+
+.table {
+    min-width: 900px;
+	max-width:100%;
+    margin: 20px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.table-header {
+    color: #eee;
+	display:flex;
+	max-width:100%;
+	background:#576682;
+	padding: 12px;
+}
+
+.table-row {
+	display:flex;
+	max-width:100%;
+    padding: 12px;
+}
+
+.table-row:nth-of-type(odd) {
+    background: #ddd;
+}
+
+.table-data, .header__item {
+	flex: 1 1 20%;
+    text-align:left;
+}
+
+.header__item {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    margin: 20px;
+}

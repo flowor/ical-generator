@@ -1,0 +1,4 @@
+Subject,Start Date,Start Time,End Date,End Time,All Day,Description,Location,UID,Busy Status
+English 101,01/30/2019,9:00am,01/30/2019,9:50am,FALSE,With professor Smith,LARTS 404,abc@abc.com,BUSY
+Group Process Day,02/02/2019,,02/02/2019,,TRUE,,Oak Glen Hall,def@def.com,BUSY
+Meet and Greet,02/04/2019,8:00am,02/05/2019,5:00pm,FALSE,Meeting others all day long for two days,,ghi@ghi.com,FREE

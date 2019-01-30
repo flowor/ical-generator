@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iCal Generator - by Tim</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div id="heading">
+            <h1>iCal Generator</h1>
+        </div>
+        <section class="content">
+
+        <input id="csvfile" type="file"><br /><br />
+        <button class="btn" id="create">Generate & Download</button>
+        <p></p><a download="calendar.ics" id="downloadlink" style="display: none"></a></p>
+
+        <div class="help">
+            <p>Start by creating a spreadsheet with the following headers in any order. Here's a sample:</p>
+
+            <div class="table">
+                <div class="table-header">
+                    <div class="header__item">Subject</div>
+                    <div class="header__item">Start Date</a></div>
+                    <div class="header__item">Start Time</a></div>
+                    <div class="header__item">End Date</div>
+                    <div class="header__item">End Time</div>
+                    <div class="header__item">All Day</div>
+                    <div class="header__item">Description</div>
+                    <div class="header__item">Location</div>
+                    <div class="header__item">UID</div>
+                    <div class="header__item">Busy Status</div>
+                </div>
+                <div class="table-content">
+                    <div class="table-row">
+                        <div class="table-data">English 101</div>
+                        <div class="table-data">01/30/2019</div>
+                        <div class="table-data">9:00am</div>
+                        <div class="table-data">01/30/2019</div>
+                        <div class="table-data">9:50am</div>
+                        <div class="table-data">FALSE</div>
+                        <div class="table-data">With professor Smith</div>
+                        <div class="table-data">LARTS 404</div>
+                        <div class="table-data">abc@abc.com</div>
+                        <div class="table-data">BUSY</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-data">Group Process Day</div>
+                        <div class="table-data">02/02/2019</div>
+                        <div class="table-data"></div>
+                        <div class="table-data">02/02/2019</div>
+                        <div class="table-data"></div>
+                        <div class="table-data">TRUE</div>
+                        <div class="table-data"></div>
+                        <div class="table-data">Oak Glen Hall</div>
+                        <div class="table-data">def@def.com</div>
+                        <div class="table-data">BUSY</div>
+                    </div>
+                    <div class="table-row">
+                            <div class="table-data">Meet and Greet</div>
+                            <div class="table-data">02/04/2019</div>
+                            <div class="table-data">8:00am</div>
+                            <div class="table-data">02/05/2019</div>
+                            <div class="table-data">5:00pm</div>
+                            <div class="table-data">FALSE</div>
+                            <div class="table-data">Meeting others all day long for two days</div>
+                            <div class="table-data"></div>
+                            <div class="table-data">ghi@ghi.com</div>
+                            <div class="table-data">FREE</div>
+                    </div>
+                </div>
+            </div>
+
+            <p>For the Busy Status column you can write any of the following: FREE, WORKINGELSEWHERE, TENTATIVE, BUSY, AWAY</p>
+            <p>Then export it as a CSV file (<a href="sample_calendar.csv" download="sample_calendar.csv">Download this sample</a>)</p>
+            <p>Upload the csv file using "Choose File" above, and hit "Generate & Download" to get the iCal ics file</p>
+
+            <p>Then you can simply import the ics file into outlook:</p>
+            <img src="outlook.png" />
+
+
+        </div>
+
+
+    </section>
+
+
+</body>
+
+</html>
