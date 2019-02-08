@@ -33,11 +33,6 @@ $(function () {
             alert('No file chosen!');
             return;
         }
-        
-        if (file.type != 'text/csv') {
-            alert('Error! The file does not appear to be a CSV file!');
-            return;
-        }
 
         // If there are no errors
         if (file) {
