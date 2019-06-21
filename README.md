@@ -2,7 +2,7 @@
 
 Converts a csv file into an iCal .ics file ready to be imported into an Outlook Calendar for example. 
 
-[Live Demo]:(https://timrose.me/ical-generator/)
+[Live Demo](https://timrose.me/ical-generator/)
 
 ## Getting Started
 
