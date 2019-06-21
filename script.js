@@ -61,6 +61,10 @@ $(function () {
         json.forEach(processEvent);
 
         function processEvent(event) {
+            // Don't process is there is no subject
+            if (event['Subject'].trim() == "")
+                return;
+            
             // Start Event
             filetext += KEY_WORDS.EVENT[0] + '\n';
 
