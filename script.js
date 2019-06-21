@@ -33,11 +33,6 @@ $(function () {
             alert('No file chosen!');
             return;
         }
-        
-        if (file.type != 'text/csv') {
-            alert('Error! The file does not appear to be a CSV file!');
-            return;
-        }
 
         // If there are no errors
         if (file) {
@@ -66,6 +61,10 @@ $(function () {
         json.forEach(processEvent);
 
         function processEvent(event) {
+            // Don't process is there is no subject
+            if (event['Subject'].trim() == "")
+                return;
+            
             // Start Event
             filetext += KEY_WORDS.EVENT[0] + '\n';
 
